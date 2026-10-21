@@ -1,0 +1,53 @@
+# 프로젝트 전체 공통 제외 항목
+# (frontend/, backend/ 고유 항목은 각 폴더의 .gitignore에서 관리)
+
+### OS ###
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+### IDE / 에디터 ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+### 환경 변수 / 비밀 정보 ###
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+### 로그 ###
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+### Node (frontend) ###
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.local
+
+### Java / Gradle (backend) ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+*.class
+hs_err_pid*
+
+### Claude Code 개인 설정 ###
+.claude/settings.local.json
